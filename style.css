@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    /* background-color: #27e91272; */
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 12vh;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: flex-start;
+    gap: 2vw;
+    position: relative;
+    padding: 1vh 0;
+    z-index: 10;
+}
+.nav-part2 h4{
+    font-size: 0.73vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2.6vw;
+}
+
+.nav-part2 h5 {
+    margin-bottom: 1vw;
+    display: none;  
+    transform: translateY(25px);
+    overflow: hidden;
+  /* background-color: red; */
+}
+.nav-part2 h5 span{
+    font-size: 0.74vw;
+    font-weight: 400;
+    display: inline-block;
+}
+/* nav:hover #nav-bottom{
+    height: 150%;
+    background-color: #111;
+    bottom: -180%;
+
+} */
+#nav-bottom{
+    height: 0vh;
+    width: 79%;
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid white;
+}
+
+nav button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.85vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav button svg{
+    height: 0.85vw;
+    margin-left: 1.65vw;
+}
+
+#page1{
+    height: 100vh; /*view port height (total screen ki height) */
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 h1{
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+
+#page1 h1 svg{
+    height: 6vw;
+    width: 6vw;
+    background-color: #0BA34E;
+    border-radius: 50%;
+}
+
+
+
+#page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin: 2.4vh;
+    font-size: 1vw;
+}
+
+#page1-something{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+#page1-something h4{
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: lowercase;
+    padding: 5px 10px;
+    border: 1px solid #ffffff7b;
+    margin-top: 1px;
+    border-radius: 50px;
+}
+
+#page1-something h4:nth-last-child(2){ /*for and sabko same krke ek ko alga kr diya*/
+    border: none;
+    padding: 2px;
+}
+
+
+#moving-div{
+    /* background-color: red; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    width: 44%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+}
+
+#moving-div .move{
+    display: inline-block; /* inline block ka mtlb hai puri line nhi cover karega jitni size hai utna hi leke chalega*/
+    animation-name: move;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+}
+
+#moving-div .move img{
+    height: 1vw;
+    margin: 0 1vw;
+}
+
+@keyframes move {  /*to do cheeze hoti hai ek to animations ko banana aur ek animation ko apply krna to hum ynha pehle animation ko banayenge aur idhar identifiers ki jagah animation ka naam move rakha hai*/
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#blur-left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to left,transparent, #111); /*ye color ko do color ka shade bna deta h upar ek color neeche ek color aur beech me dono ka mix "to right" laga dene se ye effect right me ho jayega shadding wala*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#blur-right{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right,transparent, #111); /*ye color ko do color ka shade bna deta h upar ek color neeche ek color aur beech me dono ka mix "to right" laga dene se ye effect right me ho jayega shadding wala*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}

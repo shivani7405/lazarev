@@ -250,5 +250,6 @@ font-size: 0.9vw;
     object-fit: cover; /*taaki object ko cover kr le*/
     opacity: 0;  /*to add transparency to the background of an element*/
     position: absolute;
+    scale: 0;
 }
 

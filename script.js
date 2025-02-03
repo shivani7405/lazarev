@@ -49,3 +49,23 @@ nav.addEventListener("mouseleave", function(){
         duration: 0.2
     })
 })
+
+// var relem = document.querySelector("#right-elem1")
+// var relemImg = document.querySelector("#right-elem1 img")
+
+// relemImg.addEventListener("mouseenter", function(){
+//     relemImg.style.opacity = 1                            /* this can be done if its about 1 img but we have to apply this on 4 so we opt for something different*/
+// })
+
+var rightElem = document.querySelectorAll(".right-elem")    /*for each loop pe function lagaya*/
+rightElem.forEach(function(elem){
+    elem.addEventListener("mouseover", function(){
+        console.log("Hello");
+        
+    })    
+
+    elem.addEventListener("mouseleave", function(){
+        console.log("not Hello");
+        
+    }) 
+})

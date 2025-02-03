@@ -107,8 +107,6 @@ nav button svg{
     border-radius: 50%;
 }
 
-
-
 #page1 p{
     text-align: center;
     font-weight: 400;
@@ -195,4 +193,62 @@ nav button svg{
     height: 100vh;
     width: 100%;
     background-color: #111;
+    position: relative;
+    padding: 0vw 10.5vw;
+    display: flex;
+    padding-bottom: 8vw;
+    align-items: center;
+    border-top: 2px solid #333;
+    justify-content: space-between;
 }
+
+#page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 0;   /*1st wala for top/bottom and 2nd wala for left/right*/
+    flex-direction: column;
+}
+
+#page2-left p{
+font-size: 0.9vw;
+}
+
+#page2-left h5{
+    width: 75%;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: #333; */
+}
+
+.right-elem{
+    position: relative;
+    /* background-color: red; */
+    /* height: 15vh; */
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+    border-bottom: 1px solid #333;
+}
+
+.right-elem h2{
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+.right-elem img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover; /*taaki object ko cover kr le*/
+    opacity: 0;  /*to add transparency to the background of an element*/
+    position: absolute;
+}
+

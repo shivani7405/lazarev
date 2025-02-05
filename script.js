@@ -51,9 +51,6 @@ function navAnimation(){
         })
     })
 }
-
-navAnimation()
-
 // Image movement code
 function page2animation(){
         var rightElem = document.querySelectorAll(".right-elem")    
@@ -85,5 +82,31 @@ function page2animation(){
         })
     });
 }
+function page3videoanimation(){
+    var page3center = document.querySelector("#page3-center")
+    var video = document.querySelector("#page3 video")
+
+    page3center.addEventListener("click", function(){
+        video.play()
+        gsap.to(video,{
+            transform: "scaleX(1) scale(1)",
+            opacity: 1,
+            borderRadius: 0 
+        })
+    })
+
+    video.addEventListener("click", function(){
+        video.pause()
+        gsap.to(video,{
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: "30px" 
+        })
+    })
+}    
 
 page2animation()
+
+navAnimation()
+
+page3videoanimation()

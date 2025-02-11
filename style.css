@@ -487,70 +487,174 @@ font-size: 0.9vw;
 #page5-div2{
     height: 50%;
     width: 100%;
-    background-color: blue;
-    /* align-items: right; */
+    /* background-color: blue; */
+    padding-top: 8vh;
     display: flex;
+    /* flex-direction: column; */
 }
 
 #page5-div2-123{
     height: 100%;
-    width: 30%;
-    background-color: red;
-}
+    width: 40%;
+    /* background-color: purple; */
 
+}
 #page5-div2-1234{
     height: 100%;
-    width: 70%;
-    background-color: green;
+    width: 55%;
+    /* background-color: red; */
     display: flex;
-    margin-right: 7vw;
-    /* align-items: center; */
-    justify-content: right;
-    /* padding: 0vw, 3vw; */
-    padding: 1vw;
-    padding-top: 2vw;
-    padding-left:2vw;
-    display: flex;
-    /* flex-direction: column; */
+    /* gap: 20px; */
+    flex-direction: column;
 }
 
-#dup{ 
-    height: 20%;
-    width: 80%;
+#dup{
+    height: 30%;
+    width: 100%;
+    /* background-color: yellow; */
     display: flex;
-    background-color: grey;
-    margin-left: 4vw ;
-    margin-right: 4vw; 
-    display: flex;
-    /* flex-direction: column; */
-} 
-
-#dup p{
-    color: black;
-    font-size: 1.5vw;
-
+    /* gap: 15vh; */
+    padding-left: 9vw ;
+    /* padding: 5px; */
 }
+
 #span-div{
-    height: 10vh;
-    width: 70vw;
-    background-color: pink;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    height: 7vh;
+    width: 25vh;
+    margin-top: 0.4vw;
+    /* background-color: pink */
 }
-
 #span-div h5{
+    font-size: 0.7vw;
     color: black;
-    font-size: 0.8vw;
-    display: flex;
-    justify-content: center;
+}
+#kup p{
+    font-size: 1.7vw;
+    color: black;
+    line-height: 2vw;
 }
 
 #pup{
-    height: 50vh;
+    padding-left: 9vw ;
+}
+#pup p{
+    font-size: 1.7vw;
+    line-height: 2vw;
+    color: black;
+}
+
+#page6{
+    height: 75vh;
     width: 100%;
-    background-color: orange;
+    background-color: #fff;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    padding: 0vh 15vh;
+    padding-top: 3vh;
+    gap: 2.5vw;
+    /* padding-top: 10vh; */
+    /* padding-left: 20vh */
+}
+
+#page6-div1{
+    height: 100%;
+    width: 28%;
+    /* background-color: red; */
+    /* margin-right: 2vw; */
+    padding-top: 1.7vw;
+    border-top: 2px solid black;
+}
+
+#page6-div1 h2{
+    font-size: 2vw;
+    color: black;
+    font-weight: 100;
+}
+
+#page6-div1 p{
+    font-size: 1.2vw;
+    color: black;
+    padding-top: 6vw;
+}
+
+#page6-div2{
+    height: 75%;
+    width: 74%;
+    background-color: #fff;
+    /* padding-left: 4vw; */
+    position: relative;
+}
+#page6-div2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+#page6-div2 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.1s;
+}
+
+#page7{
+    height: 67vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 0vh 15vh;
+    /* padding-top: 5vh; */
+    gap: 2.5vw;
+    /* padding-top: 10vh; */
+    /* padding-left: 20vh */
+}
+
+#page7-div1{
+    height: 100%;
+    width: 28%;
+    /* background-color: red; */
+    /* margin-right: 2vw; */
+    padding-top: 1.7vw;
+    border-top: 2px solid black;
+}
+
+#page7-div1 h2{
+    font-size: 2vw;
+    color: black;
+    font-weight: 100;
+}
+
+#page7-div1 p{
+    font-size: 1.2vw;
+    color: black;
+    padding-top: 6vw;
+}
+
+#page7-div2{
+    height: 75%;
+    width: 74%;
+    background-color: #fff;
+    /* padding-left: 4vw; */
+    position: relative;
+}
+#page7-div2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+#page7-div2 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    /* transition: opacity ease 0.1s; */
 }

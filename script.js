@@ -51,7 +51,6 @@ function navAnimation(){
         })
     })
 }
-// Image movement code
 function page2animation(){
         var rightElem = document.querySelectorAll(".right-elem")    
         rightElem.forEach(function(elem){
@@ -104,9 +103,54 @@ function page3videoanimation(){
         })
     })
 }    
+function videoHoverAnimation() {
+    var sections = document.querySelectorAll(".section");
+    
+    sections.forEach(function(section) {
+        const video = section.querySelector("video");
+        const image = section.querySelector("img");
+        
+        section.addEventListener("mouseenter", function() {
+            // Fade out image and fade in video
+            gsap.to(image, {
+                opacity: 0,
+                duration: 0.3
+            });
+            gsap.to(video, {
+                opacity: 1,
+                duration: 0.3
+            });
+            // Start playing video
+            if(video.paused) {
+                video.play();
+            }
+        });
+        
+        section.addEventListener("mouseleave", function() {
+            // Fade in image and fade out video
+            gsap.to(image, {
+                opacity: 1,
+                duration: 0.3
+            });
+            gsap.to(video, {
+                opacity: 0,
+                duration: 0.3,
+                onComplete: function() {
+                    video.pause();
+                    video.currentTime = 0; // Reset video to start
+                }
+            });
+        });
+    });
+}
+
 
 page2animation()
 
 navAnimation()
 
 page3videoanimation()
+
+videoHoverAnimation()
+
+
